@@ -1,0 +1,14 @@
+<div class="not-found" ng-if="foundItems.length === 0">
+    Nothing found
+</div>
+<div class="menu-list" ng-if="foundItems.length > 0">
+    <div class="menu-item" ng-repeat="item in foundItems track by $index">
+        <div class="menu-text">
+            <span class="menu-name">{{item.name}}</span>
+            <span class="menu-code">{{item.short_name}}</span>
+            <div class="menu-desc">{{item.description}}</div>
+        </div>
+
+        <button class="remove-btn" ng-click="onRemove({index: $index})">Don't want this one!</button>
+    </div>  
+</div>

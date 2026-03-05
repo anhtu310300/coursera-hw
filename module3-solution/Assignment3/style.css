@@ -1,0 +1,141 @@
+/* ===== Page spacing ===== */
+
+.container{
+  margin-top:40px;
+}
+
+
+
+/* ===== Search input + button ===== */
+
+.form-group{
+  margin-bottom:15px;
+}
+
+
+
+/* ===== List container ===== */
+
+.menu-list{
+  margin-top:25px;
+}
+
+
+
+/* ===== Each menu item ===== */
+
+.menu-item{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  padding:16px;
+
+  margin-bottom:12px;
+
+  border:1px solid #e5e5e5;
+  border-radius:6px;
+
+  background:#fafafa;
+
+  transition:background 0.2s;
+}
+
+
+
+/* hover effect */
+
+.menu-item:hover{
+  background:#f3f3f3;
+}
+
+
+
+/* ===== Text area ===== */
+
+.menu-text{
+  flex:1;
+  padding-right:20px;
+}
+
+
+
+/* ===== Dish name ===== */
+
+.menu-name{
+  font-weight:bold;
+  font-size:16px;
+}
+
+
+
+/* ===== Code ===== */
+
+.menu-code{
+  color:#888;
+  margin-left:6px;
+}
+
+
+
+/* ===== Description ===== */
+
+.menu-desc{
+  margin-top:6px;
+  color:#555;
+  line-height:1.4;
+}
+
+
+
+/* ===== Remove button ===== */
+
+.remove-btn{
+
+  background:#e74c3c;
+  color:white;
+
+  border:none;
+
+  padding:8px 14px;
+
+  border-radius:4px;
+
+  cursor:pointer;
+
+  font-size:12px;
+
+  min-width:150px;
+  text-align:center;
+
+  flex-shrink:0;
+}
+
+
+
+/* hover */
+
+.remove-btn:hover{
+  background:#c0392b;
+}
+
+
+
+/* ===== Nothing found message ===== */
+
+.not-found{
+
+  margin-top:20px;
+
+  background:#fff3cd;
+  border:1px solid #ffeeba;
+
+  padding:12px;
+
+  border-radius:4px;
+
+  color:#856404;
+
+  font-weight:500;
+}
