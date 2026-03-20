@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu App - Module 4 Solution</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+
+  <!-- UI-Router -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.min.js"></script>
+
+  <!-- Modules -->
+  <script src="src/data.module.js"></script>
+  <script src="src/menuapp.module.js"></script>
+
+  <!-- Service -->
+  <script src="src/data/menudata.service.js"></script>
+
+  <!-- Components -->
+  <script src="src/categories/categories.component.js"></script>
+  <script src="src/items/items.component.js"></script>
+
+  <!-- Controllers -->
+  <script src="src/categories-page/categories.controller.js"></script>
+  <script src="src/items-page/items.controller.js"></script>
+
+  <!-- Routes -->
+  <script src="src/routes.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <a ui-sref="home">🍽 MenuApp</a>
+      </div>
+
+      <nav class="nav-links">
+        <a ui-sref="home" ui-sref-active="active">Home</a>
+        <a ui-sref="categories" ui-sref-active="active">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
+  </main>
+</body>
+</html>

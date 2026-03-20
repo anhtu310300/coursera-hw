@@ -1,0 +1,16 @@
+<section>
+  <a class="back-link" ui-sref="categories">← Back to Categories</a>
+
+  <div class="page-header">
+    <h2>{{ itemsCtrl.category.name }}</h2>
+    <p>
+      <strong>Category short name:</strong> {{ itemsCtrl.category.short_name }}
+    </p>
+  </div>
+
+  <p class="section-note" ng-if="itemsCtrl.category.special_instructions">
+    <strong>Special instructions:</strong> {{ itemsCtrl.category.special_instructions }}
+  </p>
+
+  <items items="itemsCtrl.items"></items>
+</section>
